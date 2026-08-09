@@ -4,6 +4,8 @@ An interactive pathfinding-algorithm visualizer for course pages, blog posts, an
 lecture slides. Draw walls, drop a start/end node, and watch BFS, DFS, Dijkstra, or
 A* explore the grid step by step. One script tag, zero dependencies, zero build step.
 
+https://sefinos.github.io/pathfinding-visualizer-demo/
+
 ---
 
 ## Quick start
