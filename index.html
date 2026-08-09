@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer — Embeddable Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="page">
+
+        <header class="hero">
+            <p class="eyebrow">// embeddable widget</p>
+            <h1>Pathfinding, visualized<span class="cursor" aria-hidden="true">_</span></h1>
+            <p class="hero-sub">One script tag. Four algorithms — BFS, DFS, Dijkstra, and A* — with full step-by-step playback. Draw walls, drop start/end nodes, and watch each one explore the grid differently. No dependencies, no build step.</p>
+        </header>
+
+        <section class="editor-window" id="editor-window" aria-label="Pathfinding visualizer demo">
+            <div class="titlebar">
+                <div class="traffic-lights" aria-hidden="true">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                </div>
+                <span class="titlebar-label">pathfinding-visualizer — live demo</span>
+            </div>
+
+            <nav class="tab-bar" id="algorithm-tabs" role="tablist" aria-label="Choose algorithm">
+                <button class="tab active" data-algo="bfs" role="tab" aria-selected="true">bfs.js<span class="tab-info" data-tooltip="Explores evenly in every direction, layer by layer. Always finds the shortest path on an unweighted grid.">i</span></button>
+                <button class="tab" data-algo="dfs" role="tab" aria-selected="false">dfs.js<span class="tab-info" data-tooltip="Dives down one path as far as it can before backtracking. Finds a path, but rarely the shortest one.">i</span></button>
+                <button class="tab" data-algo="dijkstra" role="tab" aria-selected="false">dijkstra.js<span class="tab-info" data-tooltip="Always expands the closest known node first. Guarantees the shortest path, even with weighted cells.">i</span></button>
+                <button class="tab" data-algo="astar" role="tab" aria-selected="false">aStar.js<span class="tab-info" data-tooltip="Like Dijkstra, but a heuristic biases it toward the goal, so it explores far fewer nodes.">i</span></button>
+            </nav>
+
+            <div class="editor-body">
+                <div class="grid-shell">
+                    <div id="grid" role="grid" aria-label="Pathfinding grid"></div>
+                </div>
+            </div>
+
+            <div class="toolbar">
+                <div class="toolbar-group mode-group" role="group" aria-label="Draw mode">
+                    <button class="btn btn-mode active" data-mode="start" id="mode-start">▶ start</button>
+                    <button class="btn btn-mode" data-mode="end" id="mode-end">● end</button>
+                    <button class="btn btn-mode" data-mode="wall" id="mode-wall">▦ wall</button>
+                </div>
+
+                <div class="toolbar-group">
+                    <button id="clear-walls-btn" class="btn btn-ghost">↺ clear walls</button>
+                    <button id="reset-btn" class="btn btn-ghost">⟲ reset</button>
+                </div>
+
+                <div class="toolbar-group playback-group">
+                    <button id="run-btn" class="btn btn-primary" title="Run BFS">▶ run</button>
+                </div>
+            </div>
+
+            <div class="status-bar">
+                <span class="status-item" id="status-algo">bfs.js</span>
+                <span class="status-item status-complexity" id="status-complexity">O(V + E)</span>
+                <span class="status-spacer"></span>
+                <span class="status-item legend"><span class="dot-legend dot-wall"></span>wall</span>
+                <span class="status-item legend"><span class="dot-legend dot-start"></span>start</span>
+                <span class="status-item legend"><span class="dot-legend dot-end"></span>end</span>
+                <span class="status-item legend"><span class="dot-legend dot-visited"></span>visited</span>
+                <span class="status-item legend"><span class="dot-legend dot-path"></span>path</span>
+                <span class="status-spacer"></span>
+                <span class="status-item" id="status-visited">explored: 0</span>
+                <span class="status-item" id="status-path">path: —</span>
+            </div>
+        </section>
+
+        <footer class="cta">
+            <p class="cta-text">Buyers get this widget, unstyled and styled variants, and a README — ready to paste into any course page.</p>
+            <button class="btn btn-primary btn-large" id="buy-btn">Get it on Gumroad now</button>
+        </footer>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
