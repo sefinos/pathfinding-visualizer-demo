@@ -1,0 +1,59 @@
+PATHFINDING VISUALIZER — LICENSE
+
+Copyright (c) 2026 Rhys Pownall. All rights reserved.
+
+This license covers the "Pathfinding Visualizer" embeddable widget (the files
+pathfinding-visualizer.js, README.txt, and any accompanying example/demo files
+included in this download), referred to below as "the Software."
+
+1. WHAT YOU CAN DO
+
+   You may:
+   - Embed and use the Software on your own websites, course pages, blogs,
+     or personal projects — as many as you like.
+   - Modify the Software's code for your own use (change colors, tweak
+     behavior, etc).
+   - Use it in projects for clients, as long as the finished project is
+     what's being delivered — not the widget's source code by itself.
+
+2. WHAT YOU CAN'T DO
+
+   You may not:
+   - Resell, sublicense, or redistribute the Software itself (the raw
+     .js file or a modified version of it) as a standalone product,
+     template, or asset — whether for free or for payment.
+   - Include the Software in another product whose main purpose is to
+     package and pass on the Software itself (e.g. a "pathfinding
+     algorithm course kit" bundle sold to others without permission).
+   - Claim authorship of the original Software.
+
+   If you're not sure whether your use falls under "using it" vs.
+   "redistributing it," ask before assuming — a quick message is easier
+   for everyone than a dispute later.
+
+3. NO WARRANTY
+
+   The Software is provided "as is," without warranty of any kind. The
+   author is not liable for any damages or issues arising from its use,
+   including but not limited to bugs, downtime, or compatibility issues
+   with your website.
+
+4. OWNERSHIP
+
+   The author retains all rights, title, and ownership of the Software.
+   This license grants you the right to use it under the terms above —
+   it does not transfer ownership to you.
+
+5. TERMINATION
+
+   This license ends automatically if you violate its terms (e.g. by
+   redistributing the Software). Continued use after that point is not
+   authorized.
+
+---
+
+This is a plain-language license written for a small digital product and
+is not a substitute for legal advice. If you need a more formal or
+specific license (e.g. for enterprise/team use, resale rights, or a
+different jurisdiction's requirements), consult a lawyer before relying
+on this document.
